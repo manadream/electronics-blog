@@ -29,7 +29,6 @@ url: "http://manadream.blog" # the base hostname & protocol for your site, e.g. 
 twitter_username: manadream_
 github_username:  manadream
 instagram_username: manadream.exe
-twitter_url: https://twitter.com/manadream_
 spotify_url: https://play.spotify.com/artist/5n2GG1ZwhTvqEpEi2LnfKv
 youtube_url: https://www.youtube.com/channel/UCXW5tl7eP3vmhCfPOOiUJ0w
 twitch_url: https://www.twitch.tv/manadream_
@@ -44,11 +43,12 @@ patreon_url: https://www.patreon.com/manadream
 # Build settings
 theme: minima
 plugins:
-- jekyll-feed
+  - jekyll-feed
 
 minima:
   skin: dark
   show_excerpts: true
+show_excerpts: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
