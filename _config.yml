@@ -28,6 +28,18 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://manadream.blog" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: manadream_
 github_username:  manadream
+instagram_url: https://instagram.com/manadream.exe
+twitter_url: https://twitter.com/manadream_
+spotify_url: https://play.spotify.com/artist/5n2GG1ZwhTvqEpEi2LnfKv
+youtube_url: https://www.youtube.com/channel/UCXW5tl7eP3vmhCfPOOiUJ0w
+twitch_url: https://www.twitch.tv/manadream_
+discord_url: https://discord.gg/RmkWPQZ
+steam_url: https://store.steampowered.com/search/?developer=manadream
+itch_url: https://manadream.itch.io/
+soundcloud_url: https://soundcloud.com/manadream
+bandcamp_url: https://manadream.bandcamp.com/
+patreon_url: https://www.patreon.com/manadream
+
 
 # Build settings
 theme: minima
