@@ -30,9 +30,11 @@ twitter_username: manadream_
 github_username:  manadream
 
 # Build settings
-theme: minima
+theme: jekyll-theme-midnight
+remote_theme: jekyll-theme-midnight
 plugins:
-  - jekyll-feed
+- jekyll-remote-theme
+- jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
