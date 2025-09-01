@@ -21,7 +21,7 @@
 title: manadream electronics blog
 email: contact@manadream.shop
 description: >- # this means to ignore newlines until "baseurl:"
-  various notes, info and ideas relating to retro console modding, CRTs and'
+  various notes, info, opinions and ideas relating to game dev, retro console modding, CRTs and
   electronics in general.
 domain: "manadream.blog"
 baseurl: "" # the subpath of your site, e.g. /blog
