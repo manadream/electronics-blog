@@ -30,10 +30,8 @@ twitter_username: manadream_
 github_username:  manadream
 
 # Build settings
-theme: jekyll-theme-midnight
-remote_theme: jekyll-theme-midnight
+theme: midnight
 plugins:
-- jekyll-remote-theme
 - jekyll-feed
 
 # Exclude from processing.
