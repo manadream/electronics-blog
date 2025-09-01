@@ -3,13 +3,13 @@ layout: post
 title:  "RCA T09081BC - RGB and S-Video Mod"
 tags: crt mod rgb svideo
 ---
-![set](/assets/img/_MG_1106_edited.JPG)
-
 This little 9" travel TV has a pretty good looking image, and modding it only makes it better. But is RGB better than S-Video and composite for this CRT? That's a matter of opinion, which you should decide for yourself.
 
-![composite](/assets/img/_MG_1023_edited.JPG)
-![s-video](/assets/img/_MG_1034_edited.JPG)
-![rgb](/assets/img/_MG_1046_edited.JPG)
+![set](/assets/img/IMG_1106_edited.JPG)
+
+![composite](/assets/img/IMG_1023_edited.JPG)
+![s-video](/assets/img/IMG_1034_edited.JPG)
+![rgb](/assets/img/IMG_1046_edited.JPG)
 
 You can see in the comparison photos that S-Video is noticeably more crisp than composite, while still keeping the color blending that comes from running S-Video through the jungle chip's filters.
 
