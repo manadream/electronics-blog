@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Power Supply Video Noise Solution"
-date:   2025-08-31 16:17:02 -0700
 tags: noise crt consoles fix
 ---
 I run all my consoles through a receiver to select which one to display on my CRT. One day I noticed that there was a lot of noise in the video from my Sega Genesis.
@@ -18,4 +17,9 @@ I then tried the power supply that I was using for my NES and SNES on the Genesi
 ![Genesis noise gone](/assets/img/IMG_20250831_201622.jpg)
 ![Genesis noise gone](/assets/img/IMG_20250831_195158.jpg)
 
-I looked into what the difference was by opening them all up. The power supply I was using for my NES and SNES is one of those old heavy brick style power supplies that has nothing more than a transformer, a diode bridge, and a large capacitor. The others were all switching power supplies, a more efficient technology but clearly more noisy. There are probably higher quality switching power supplies than the ones I have (one of them did produce much less noise than the others), but using the simpler, heavier one got rid of the noise. So if you encounter this type of noise in the video of your retro consoles, it might be the power supply.
+I looked into what the difference was by opening them all up.
+
+![Transformer power supply](/assets/img/IMG_20250812_181818.jpg)
+![Switching power supply](/assets/img/IMG_20250831_213242.jpg)
+
+The power supply I was using for my NES and SNES is one of those old heavy brick style power supplies that has nothing more than a transformer, a diode bridge, and a large capacitor. The others were all switching power supplies, a more efficient technology but clearly more noisy. There are probably higher quality switching power supplies than the ones I have (one of them did produce much less noise than the others), but using the simpler, heavier one got rid of the noise. So if you encounter this type of noise in the video of your retro consoles, it might be the power supply.

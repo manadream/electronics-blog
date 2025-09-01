@@ -1,6 +1,6 @@
 ---
 layout: post
 title:  "Power Supply Video Noise Solution"
-tags: consoles mods
+tags: crt filter noise video
 ---
 TODO
