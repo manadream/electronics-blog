@@ -4,15 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Musician, artist, indie game dev, electronics designer and retro console and CRT modder.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Check out my games, music and electronics products[on my linktree.][https://linktr.ee/manadream]
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Or here's direct links to my various pages:
+[Games](http://manadream.games)
+[Electronics Store](http://manadream.shop)
+[Etsy Store](https://www.etsy.com/shop/ManadreamElectronics)
+[Ebay Store](https://www.ebay.com/usr/manadream_electronics)
+[Music](https://manadream.bandcamp.com)
