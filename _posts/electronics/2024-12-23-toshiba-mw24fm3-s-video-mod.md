@@ -44,4 +44,4 @@ A simplified schematic of the S-Video mod.
 ![overhead](/assets/img/IMG_20241222_225650.jpg)
 ![DVD closeup](/assets/img/IMG_20241222_225704.jpg)
 
-This article is also hosted on https://electron.sunthar.com/manadream/product/toshiba-mw24fm3-s-video-mod
+This article is also hosted on [Sunthar.com](https://electron.sunthar.com/manadream/product/toshiba-mw24fm3-s-video-mod)

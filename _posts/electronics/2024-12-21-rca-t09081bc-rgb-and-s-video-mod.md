@@ -15,7 +15,7 @@ You can see in the comparison photos that S-Video is noticeably more crisp than 
 
 RGB on the other hand, is a bit brighter (I compensated for that in the pictures) and the color accuracy is better. You do lose some of the color blending that S-Video and Composite have, while getting the (perhaps) most crispy video.
 
-I installed the RGB mod using Sunthar's guide, which you can see here: https://sector.sunthar.com/guides/crt-rgb-mod/samsung-cxf0933.html The guide is for a Samsung CRT, which this RCA is just a rebrand of the same model.
+I installed the RGB mod using Sunthar's guide, which you can see [here](https://sector.sunthar.com/guides/crt-rgb-mod/samsung-cxf0933.html) The guide is for a Samsung CRT, which this RCA is just a rebrand of the same model.
 
 Using the schematic from [Sunthar's RGB Mod guide](https://sector.sunthar.com/guides/crt-rgb-mod/samsung-cxf0933.html), I made this simple mod that can toggle between S-Video and composite:
 1. Lift pin 45 of the jungle chip (Toshiba TA1201AN)
@@ -36,7 +36,7 @@ A simplified schematic of the S-Video mod.
 
 ![side panel](/assets/img/IMG_1007.JPG)
 
-A custom 3D-printed AV panel. The green switch is for turning on and off RGB input and the silver switch is for selecting S-Video or Composite. Print file available here: https://www.printables.com/model/1116782-rca-t09081bc-t09082-samsung-cxf0933-av-side-panel
+A custom 3D-printed AV panel. The green switch is for turning on and off RGB input and the silver switch is for selecting S-Video or Composite. Print file available [here](https://www.printables.com/model/1116782-rca-t09081bc-t09082-samsung-cxf0933-av-side-panel)
 
 ![back](/assets/img/IMG_1025.JPG)
 ![front](/assets/img/IMG_1031.JPG)
@@ -55,4 +55,4 @@ RGB injection points
 
 The OSD chip.
 
-This article is also hosted on https://electron.sunthar.com/manadream/product/rca-t09081bc---rgb-and-s-video-mod
+This article is also hosted on [Sunthar.com](https://electron.sunthar.com/manadream/product/rca-t09081bc---rgb-and-s-video-mod)

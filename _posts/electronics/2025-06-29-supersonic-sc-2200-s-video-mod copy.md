@@ -34,4 +34,4 @@ A simplified schematic of the S-Video mod.
 ![back](/assets/img/IMG_20250619_185326.jpg)
 ![inside back](/assets/img/IMG_20250621_093101.jpg)
 
-This article is also hosted on https://electron.sunthar.com/manadream/product/supersonic-sc-2200-s-video-mod
+This article is also hosted on [Sunthar.com](https://electron.sunthar.com/manadream/product/supersonic-sc-2200-s-video-mod)

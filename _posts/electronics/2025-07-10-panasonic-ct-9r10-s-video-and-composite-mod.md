@@ -26,9 +26,7 @@ For Audio, you can inject mono audio at the negative (-) side of C207. Simply li
 
 If you want to mix stereo into mono, connect two 1k Ohm resistors together on one side, and connect the other two sides to the Left and Right audio channels. Then connect the combined side of the resistors to the negative (-) side of C207 like above.
 
-See schematic and images for more details, as well as the schematics in the service manual.
-
-Service Manual: https://archive.org/details/panasonic-ct-9r10t-service-manual
+See schematic and images for more details, as well as the schematics in the [service manual](https://archive.org/details/panasonic-ct-9r10t-service-manual).
 
 ![schematic](/assets/img/Screenshot%20from%202025-07-11%2000-47-40.png)
 
@@ -36,4 +34,4 @@ A simplified schematic of the mod.
 
 ![back](/assets/img/IMG_20250711_011138.jpg)
 
-This article is also hosted on https://electron.sunthar.com/manadream/product/panasonic-ct-9r10-s-video-and-composite-mod
+This article is also hosted on [Sunthar.com](https://electron.sunthar.com/manadream/product/panasonic-ct-9r10-s-video-and-composite-mod)
