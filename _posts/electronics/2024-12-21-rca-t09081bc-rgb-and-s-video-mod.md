@@ -54,3 +54,5 @@ RGB injection points
 ![OSD chip](/assets/img/IMG_20250710_140358.jpg)
 
 The OSD chip.
+
+This article is also hosted on https://electron.sunthar.com/manadream/product/rca-t09081bc---rgb-and-s-video-mod
