@@ -9,11 +9,11 @@ permalink: /tags/
     {% for tag in site.tags %}
       {% assign tag_name = tag | first %}
       {% assign tag_posts = tag | last %}
-      <h3><a href="#{{ tag_name | slugify }}">{{ tag_name }}</a> ({{ tag_posts | size }})</h3>
+      <h3>{{ tag_name }} ({{ tag_posts | size }}) <a href="#{{ tag_name | slugify }}">#</a></h3>
       <ul>
         {% for post in tag_posts %}
           <li>
-            <a class="post-link" href="{{ post.url | relative_url }}">
+            <a href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
           </li>
