@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Toshiba MW24FM3 S-Video Mod"
-tags: crt mod svideo
+tags: CRT
 ---
 Adding S-Video input to this CRT requires injecting the signal at the DVD player, as it outputs S-Video to the VCR PCB which is what handles displaying it on the screen.
 

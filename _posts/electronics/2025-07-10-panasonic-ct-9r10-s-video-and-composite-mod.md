@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Panasonic CT-9R10 S-Video and Composite Mod"
-tags: crt mod svideo
+tags: CRT
 ---
 While this CRT [requires an amp to properly RGB mod it](https://sector.sunthar.com/guides/crt-rgb-mod/panasonic-ct-9r10ct.html), adding Composite and S-Video input to this TV is quite easy to do.
 

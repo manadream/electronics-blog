@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Supersonic SC-2200 S-Video Mod"
-tags: crt mod svideo
+tags: CRT
 ---
 It is possible to S-Video mod this CRT by tying into the video and audio lines from the DVD player.
 

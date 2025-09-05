@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Power Supply Video Noise Solution"
-tags: noise crt consoles fix
+tags: Electronics
 ---
 I run all my consoles through a receiver to select which one to display on my CRT. One day I noticed that there was a lot of noise in the video from my Sega Genesis.
 
