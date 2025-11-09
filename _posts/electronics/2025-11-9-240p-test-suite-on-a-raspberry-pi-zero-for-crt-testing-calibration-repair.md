@@ -87,7 +87,7 @@ include distroconfig-composite.txt
 boot=UUID=1704-1837 disk=UUID=b6a5e937-7d11-4142-87f9-3c4a5a54cfa6 quiet console=tty0 video=Composite-1:720x480@60ie
 ```
 
-## Step 4: Copy 240p Test Suites to the Pi
+## Step 3: Copy 240p Test Suites to the Pi
 
 With your SD card still inserted, download the SNES and Genesis 240p Test Suites [from here](https://artemiourbina.itch.io/240p-test-suite), rename them to `SNES-240p.sfc` and `Genesis-240p.bin` (or whatever you want) and copy them to the `roms` folder on `LAKKA_DISK`.
 
@@ -95,7 +95,7 @@ Then download the NES 240p Test Suite [from here](https://github.com/pinobatch/2
 
 Finally, add whatever other test roms you want to the `roms` folder.
 
-## Step 5: Getting Composite Output From Your Pi
+## Step 4: Getting Composite Output From Your Pi
 
 All Rapspberry Pis can output composite video, but where the signal is output is different depending on the model.
 
@@ -121,7 +121,7 @@ and if it is not, that's your problem.
 
 Some Pi Zero 1s have the `TV` label on the left side of the box and some have it on the right, but where the wires go is not different. The video signal comes from the left side and the ground on the right.
 
-## Step 6: Connect a Controller and Boot it up
+## Step 5: Connect a Controller and Boot it up
 
 Get a USB controller and a micro USB to USB A adapter so that you can connect it to your pi. I used a simple SNES style controller.
 
