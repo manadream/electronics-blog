@@ -111,7 +111,13 @@ For other Raspberry Pis it will be different where the video signal comes from:
 - Pi Zero 2: Solder to the TV and GND pads on the bottom of the PCB.
 - Pi 5: 2 through-holes on the PCB in a box labelled `VID` in between the `HMDI1` and `CAM/DISP 1` ports.
 
-If you get a weird thick, jagged white line and shifting video when you boot up your Pi using composite video, you soldered the wires in reverse (or in the case of Pi 1 through 5, the cable you are using doesn't have the correct polarity, check with a multimeter that the TRRS output is |Left Audio|Right Audio|Ground|Video| and if it is not, that's your problem).
+If you get a weird thick, jagged white line and shifting video when you boot up your Pi using composite video, you soldered the wires in reverse.
+
+Or, in the case of Pi 1 through 5, the cable you are using doesn't have the correct polarity, check with a multimeter that the TRRS output is
+
+|Left Audio|Right Audio|Ground|Video|
+
+and if it is not, that's your problem.
 
 Some Pi Zero 1s have the `TV` label on the left side of the box and some have it on the right, but where the wires go is not different. The video signal comes from the left side and the ground on the right.
 
