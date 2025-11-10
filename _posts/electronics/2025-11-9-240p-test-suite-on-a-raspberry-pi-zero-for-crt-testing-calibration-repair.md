@@ -99,7 +99,7 @@ Finally, add whatever other test roms you want to the `roms` folder.
 
 All Rapspberry Pis can output composite video, but where the signal is output is different depending on the model.
 
-For a Raspberry Pi Zero 1, the output is made available via 2 through-holes on the Pis PCB. They are labelled by a box around them with the text `TV` screen printed next to it.
+For a Raspberry Pi Zero 1, the output is made available via 2 through-holes on the Pi's PCB. They are labelled by a box around them with the text `TV` screen printed next to it.
 
 Simply get a spare RCA or BNC cable that you can cut and use for this and solder the center/hot/signal wire to the left and the shield/ground wire to the right when looking at the board with the SD card on the left side. See the photo below.
 
@@ -113,7 +113,7 @@ For other Raspberry Pis it will be different where the video signal comes from:
 
 If you get a weird thick, jagged white line and shifting video when you boot up your Pi using composite video, you soldered the wires in reverse.
 
-Or, in the case of Pi 1 through 5, the cable you are using doesn't have the correct polarity, check with a multimeter that the TRRS output is
+Or, in the case of Pi 1 through 4, the cable you are using doesn't have the correct polarity, check with a multimeter that the TRRS output is
 
 |Left Audio|Right Audio|Ground|Video|
 
@@ -153,7 +153,7 @@ Then back out all the way back to the top menu. You can now test out your 240p s
 1. Go down to `Load Content` and select it.
 2. Choose `Start Directory` and you should see the roms you put in the `roms` folder
 3. Go down to `SNES-240p.sfc` and select it, then select `Nintendo - SNES / SFC (Snes9x)` as the core. This is very important as the settings override was set for this core only.
-4. You should see the 240p Test Suite boot up and be rendering in 240p. If the image is flickering at all (which means it's in 480i) or if the picture is really narrow in the center, then you need to go back and make sure you set the configs correctly.
+4. You should see the 240p Test Suite boot up and be rendering in 240p. If the image is flickering at all (which means it's in 480i) or if the picture is really narrow and in the center, then you need to go back and make sure you set the configs correctly.
 
 ![240p Test Suite on SNES](/assets/img/IMG_20251109_125454.jpg)
 
@@ -168,7 +168,7 @@ To make it easier to access the roms with the correct core, from the menu you ac
 
 And that's it! You now have a portable CRT testing device :)
 
-If you want my exact setup, you can also [download my retroarch.cfg file](/assets/txt/retroarch.cfg) and replace yours with it.
+If you want my exact setup, you can also [download my retroarch.cfg file](/assets/txt/retroarch.cfg) and replace yours with it. It's mostly getting rid of menu items that are not necessary for this.
 
 --------
 
