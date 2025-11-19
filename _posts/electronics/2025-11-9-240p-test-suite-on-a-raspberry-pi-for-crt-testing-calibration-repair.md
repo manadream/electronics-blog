@@ -176,10 +176,10 @@ To get audio from a Pi Zero or a Pi 5 is a little more involved, and I recommend
 
 Here I will cover the few extra steps you need to get audio from your Pi 1 through 4 (this was done on a Pi 1). 
 
-1. Edit the `config.txt` file in the `LAKKA` partition of the SD card and uncomment these two lines by removing the `#` at the beginning:
+1. Edit the `config.txt` file in the `LAKKA` partition of the SD card and uncomment these two lines by removing the `#` at the beginning (should look like this after):
 ```
-#dtparam=audio=on
-#audio_pwm_mode=1
+dtparam=audio=on
+audio_pwm_mode=1
 ```
 
 2. In `.config/retroarch/retroarch.cfg` set the `audio_device` line to this:
