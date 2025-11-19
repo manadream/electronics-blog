@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "240p Test Suite on a Pi Zero for CRT Testing, Calibration and Repair"
+title:  "240p Test Suite on a Raspberry Pi for CRT Testing, Calibration and Repair"
 tags: CRT
 ---
 I wanted a single, portable device for all my CRT repair needs, so I used a spare raspberry pi I had to run the 240p Test Suite.
 I was unsatisfied with all the guides I found on getting composite output from a raspberry pi, they were all missing something or just no longer worked with the latest emulation distros.
-I wanted something that accurrately outputs 240p content, boots up as fast as possible, and has a simple, flexible UI. After some digging, I decided to use Lakka as the distro, with some key modifications for this use case.
+I wanted something that accurately outputs 240p content, boots up as fast as possible, and has a simple, flexible UI. After some digging, I decided to use Lakka as the distro, with some key modifications for this use case.
 
 Lakka is a Linux emulation distribution that directly uses RetroArch as its means of running games as well as for UI. There is no fancy EmulationStation-like interface to scroll around in and it has as little bloat as possible.
 In addition to those benefits, using RetroArch as the means of rendering video allows us to customize the specifics of that output for each core that we want to use. This was the key to getting this to work how I wanted.
 
-This guide will go over how to set this up on a Rapspberry Pi Zero, but it will work with most other Pis as well with the difference being where to solder the composite video wires.
+This guide will go over how to set this up on a Rapspberry Pi Zero, but it will work with most other Pis as well, with the difference being where to solder the composite video wires. I have notes about other Pis where needed.
 
 ## Step 1: Flash Lakka and Set Config
 
@@ -33,7 +33,7 @@ Editing text files on a Pi's SD card can be tricky depending on the OS your comp
 
 1. Open the SD card partition labelled `LAKKA_DISK` in your file manager.
 2. Navigate to the folder `.config/retroarch/config/` (you may need to access it as root/admin).
-3. Create the folder `FCEUmm` and place the following text in a file called `FCEUmm.cfg` in the `FCEUmm` folder you just created (this is the NES core that will be used).
+3. Create the folder `QuickNES` and place the following text in a file called `QuickNES.cfg` in the `QuickNES` folder you just created (this is the NES core that will be used).
 ```
 aspect_ratio_index = "23"
 custom_viewport_height = "224"
@@ -45,7 +45,7 @@ video_fullscreen_y = "240"
 xmb_layout = "1"
 menu_scale_factor = "0.75"
 ```
-4. Create the folder `PicoDrive` and place the following text in a file called `PicoDrive.cfg` in the `PicoDrive` folder you just created (this is the Genesis/Mega Drive core that will be used).
+4. Create the folder `PicoDrive` and place the following text in a file called `PicoDrive.cfg` in the `PicoDrive` folder you just created (this is the Genesis/Mega Drive core that will be used). Note that some games do not produce audio properly on some versions of PicoDrive (I personally noticed Sonic and Knuckles and Sonic 2 have this problem), but I chose it because it runs the games the fastest.
 ```
 aspect_ratio_index = "23"
 custom_viewport_height = "224"
@@ -57,7 +57,7 @@ video_fullscreen_y = "240"
 xmb_layout = "1"
 menu_scale_factor = "0.75"
 ```
-5. Create the folder `Snes9x` and place the following text in a file called `Snes9x.cfg` in the `Snes9x` folder you just created (this is the SNES core that will be used).
+5. Create the folder `Snes9x 2002` and place the following text in a file called `Snes9x 2002.cfg` in the `Snes9x 2002` folder you just created (this is the SNES core that will be used). I chose 2002 because it performs the best of the Snes9x cores.
 ```
 aspect_ratio_index = "23"
 custom_viewport_height = "224"
@@ -82,22 +82,22 @@ Next you'll want to set up Lakka to output composite video:
 include distroconfig-composite.txt
 ```
 6. Next, open the file `cmdline.txt` in a text editor.
-7. Add `video=Composite-1:720x480@60ie` to the end of the one line in the file and save it. It should look like this:
+7. Add `video=Composite-1:720x480@60ie` to the end of the one line in the file and save it. It should look something like this (the UUIDs and other values will likely be different):
 ```
 boot=UUID=1704-1837 disk=UUID=b6a5e937-7d11-4142-87f9-3c4a5a54cfa6 quiet console=tty0 video=Composite-1:720x480@60ie
 ```
 
 ## Step 3: Copy 240p Test Suites to the Pi
 
-With your SD card still inserted, download the SNES and Genesis 240p Test Suites [from here](https://artemiourbina.itch.io/240p-test-suite), rename them to `SNES-240p.sfc` and `Genesis-240p.bin` (or whatever you want) and copy them to the `roms` folder on `LAKKA_DISK`.
+With your SD card still inserted, download the SNES and Genesis 240p Test Suites [from here](https://artemiourbina.itch.io/240p-test-suite), rename them to `240p-SNES.sfc` and `240p-Genesis.bin` (or whatever you want) and copy them to the `roms` folder on `LAKKA_DISK`.
 
-Then download the NES 240p Test Suite [from here](https://github.com/pinobatch/240p-test-mini/releases) (it's the file called 240pee.nes), rename it to `NES-240p.nes` and copy it to the `roms` folder.
+Then download the NES 240p Test Suite [from here](https://github.com/pinobatch/240p-test-mini/releases) (it's the file called 240pee.nes), rename it to `240p-NES.nes` and copy it to the `roms` folder.
 
 Finally, add whatever other test roms you want to the `roms` folder.
 
 ## Step 4: Getting Composite Output From Your Pi
 
-All Rapspberry Pis can output composite video, but where the signal is output is different depending on the model.
+All Raspberry Pis can output composite video, but where the signal is output is different depending on the model.
 
 For a Raspberry Pi Zero 1, the output is made available via 2 through-holes on the Pi's PCB. They are labelled by a box around them with the text `TV` screen printed next to it.
 
@@ -111,13 +111,13 @@ For other Raspberry Pis it will be different where the video signal comes from:
 - Pi Zero 2: Solder to the TV and GND pads on the bottom of the PCB.
 - Pi 5: 2 through-holes on the PCB in a box labelled `VID` in between the `HMDI1` and `CAM/DISP 1` ports.
 
-If you get a weird thick, jagged white line and shifting video when you boot up your Pi using composite video, you soldered the wires in reverse.
+If you get a weird thick, jagged white line and/or shifting video when you boot up your Pi using composite video, you soldered the wires in reverse.
 
 Or, in the case of Pi 1 through 4, the cable you are using doesn't have the correct polarity, check with a multimeter that the TRRS output is
 
 |Left Audio|Right Audio|Ground|Video|
 
-and if it is not, that's your problem.
+and if it is not, that's your problem. Most TRRS cables that have RCA connectors on them are not correct and need to be rewired.
 
 Some Pi Zero 1s have the `TV` label on the left side of the box and some have it on the right, but where the wires go is not different. The video signal comes from the left side and the ground on the right.
 
@@ -152,7 +152,7 @@ Then back out all the way back to the top menu. You can now test out your 240p s
 
 1. Go down to `Load Content` and select it.
 2. Choose `Start Directory` and you should see the roms you put in the `roms` folder
-3. Go down to `SNES-240p.sfc` and select it, then select `Nintendo - SNES / SFC (Snes9x)` as the core. This is very important as the settings override was set for this core only.
+3. Go down to `240p-SNES.sfc` and select it, then select `Nintendo - SNES / SFC (Snes9x 2002)` as the core. This is very important as the settings override was set for this core only.
 4. You should see the 240p Test Suite boot up and be rendering in 240p. If the image is flickering at all (which means it's in 480i) or if the picture is really narrow and in the center, then you need to go back and make sure you set the configs correctly.
 
 ![240p Test Suite on SNES](/assets/img/IMG_20251109_125454.jpg)
@@ -160,7 +160,7 @@ Then back out all the way back to the top menu. You can now test out your 240p s
 5. Press the hotkey controller combo you set and you should see the Lakka menu appear.
 6. Go down and select `Close Content` and you should be brought back to the main Lakka menu.
 
-If this all went well and looks correct, do the same for the NES 240p suite on the `Nintendo - NES / Famicom (FCEUmm)` core and Genesis 240p on the `Sega - MS/GG/MD/CD/32X (PicoDrive)` core.
+If this all went well and looks correct, do the same for the NES 240p suite on the `Nintendo - NES / Famicom (QuickNES)` core and Genesis 240p on the `Sega - MS/GG/MD/CD/32X (PicoDrive)` core.
 
 If something looks off with any of them or it's not rendering in 240p, go back and check that the configuration was done correctly.
 
@@ -170,14 +170,40 @@ And that's it! You now have a portable CRT testing device :)
 
 If you want my exact setup, you can also [download my retroarch.cfg file](/assets/txt/retroarch.cfg) and replace yours with it. It's mostly getting rid of menu items that are not necessary for this.
 
+## Bonus Step: Get Audio from your Pi
+
+To get audio from a Pi Zero or a Pi 5 is a little more involved, and I recommend [this guide](https://learn.adafruit.com/introducing-the-raspberry-pi-zero/audio-outputs) for that. Alternatively, you can get a USB Audio device that has a headphone output and then get a headphone (1/8" or 3.5mm) to RCA cable. You'd then need to follow the steps below but for `audio_device` you'd need to determine what your USB audio device ID is by SSHing into the pi and running `aplay -L`, so that's for advanced users.
+
+Here I will cover the few extra steps you need to get audio from your Pi 1 through 4 (this was done on a Pi 1). 
+
+1. Edit the `config.txt` file in the `LAKKA` partition of the SD card and uncomment these two lines by removing the `#` at the beginning:
+```
+#dtparam=audio=on
+#audio_pwm_mode=1
+```
+
+2. In `.config/retroarch/retroarch.cfg` set the `audio_device` line to this:
+```
+audio_device = "default:CARD=Headphones"
+```
+
+3. In the same config file, make sure `audio_enable` is true, like this:
+```
+audio_enable = "true"
+```
+
+Save those changes and you should now be able to get sound and video from your TRRS cable connected to the Pi.
+
+REMINDER: Your TRRS cable needs to be correctly wired as Left(T), Right(R), Ground(R), Video(S). All TRRS cables with  RCA connectors that I have randomly acquired have not been wired this way, so either modify your cable if it is not correct or buy one that is specifically for a Pi.
+
 --------
 
 Files:
 
-[FCEUmm.cfg](/assets/txt/FCEUmm.cfg)
+[QuickNES.cfg](/assets/txt/QuickNES.cfg)
 
 [PicoDrive.cfg](/assets/txt/PicoDrive.cfg)
 
-[Snes9x.cfg](/assets/txt/Snes9x.cfg)
+[Snes9x 2002.cfg](/assets/txt/Snes9x%202002.cfg)
 
 [retroarch.cfg](/assets/txt/retroarch.cfg)
