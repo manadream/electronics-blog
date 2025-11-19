@@ -172,7 +172,7 @@ If you want my exact setup, you can also [download my retroarch.cfg file](/asset
 
 ## Bonus Step: Get Audio from your Pi
 
-To get audio from a Pi Zero or a Pi 5 is a little more involved, and I recommend [this guide](https://learn.adafruit.com/introducing-the-raspberry-pi-zero/audio-outputs) for that. Alternatively, you can get a USB Audio device that has a headphone output and then get a headphone (1/8" or 3.5mm) to RCA cable. You'd then need to follow the steps below but for `audio_device` you'd need to determine what your USB audio device ID is by SSHing into the pi and running `aplay -L`, so that's for advanced users.
+To get analog audio from a Pi Zero or a Pi 5 is a little more involved, and I recommend [this guide](https://learn.adafruit.com/introducing-the-raspberry-pi-zero/audio-outputs) for that. Alternatively, you can get a USB Audio device that has a headphone output and then get a headphone (1/8" or 3.5mm) to RCA cable. You'd then need to follow the steps below but for `audio_device` you'd need to determine what your USB audio device ID is by SSHing into the pi and running `aplay -L`, so that's for advanced users. Yet another option is to get an HDMI Audio extractor to use the HDMI audio output, but at that point you might as well get a different Pi.
 
 Here I will cover the few extra steps you need to get audio from your Pi 1 through 4 (this was done on a Pi 1). 
 
