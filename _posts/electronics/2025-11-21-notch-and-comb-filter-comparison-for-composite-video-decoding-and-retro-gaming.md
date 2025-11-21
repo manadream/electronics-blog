@@ -282,6 +282,8 @@ I hope this article was helpful. Feel free to [contact me](http://manadream.blog
 
 ## References/Further Reading:
 
+[https://en.wikipedia.org/wiki/NTSC](https://en.wikipedia.org/wiki/NTSC)
+
 [https://crtdatabase.com/articles/art-design](https://crtdatabase.com/articles/art-design)
 
 [https://en.wikipedia.org/wiki/Dot_crawl](https://en.wikipedia.org/wiki/Dot_crawl)
