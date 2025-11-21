@@ -98,7 +98,7 @@ Notch filters work by splitting the Composite vide signal into Luma (Y) and Chro
 
 I purchased 4 different notch filters to compare to each other, and to [the one I have made](https://manadream.shop/product/notch-filter-composite-to-s-video-converter). I will go over each one and talk about how they compare to each other.
 
-All comparisons were done using an I-O DATA GV-USB2 S-Video capture device and the following consoles:
+All comparisons were done using an I-O DATA GV-USB2 S-Video capture device and the following consoles' composite output:
 
 - Sega Genesis Model 1 VA 6.5, recapped with no mods
 - NES-001 Front Loader, recapped and modded with Lava RGB v1
@@ -158,7 +158,7 @@ It has a BNC connector for Composite video, and two BNC connectors for S-Video i
 ![SMW](/assets/img/Extron%2002.png)
 ![Duck Tales](/assets/img/Extron%2001.png)
 
-The dot crawl on this one is better than the Tributaries and the Kramer, though the rainbow artifacts are about the same (which you can see the most on the left side of the white text in the SMW screens).
+The dot crawl on this one is better than the Tributaries and the Kramer, though the rainbow artifacts are about the same (which you can see on the left side of the white text in the SMW screens and in the Sonic image).
 
 ### Entech CSVC-1
 
@@ -232,8 +232,11 @@ The manadream Notch Filter is available for purchase [on my store](https://manad
 Here are some of these filters compared side-by-side. I have chosen the images that show the differences most clearly.
 
 ![Side by Side 1](/assets/img/Side%20By%20Side%2001.png)
+
 ![Side by Side 2](/assets/img/Side%20By%20Side%2002.png)
+
 ![Side by Side 3](/assets/img/Side%20By%20Side%2003.png)
+
 ![Side by Side 4](/assets/img/Side%20By%20Side%2004.png)
 
 ### Bonus Images
@@ -244,7 +247,9 @@ I'm showing them here to further demonstrate the difference between Comb filters
 Streets of Rage 2 on a CRT:
 
 ![SoR2 1](/assets/img/Example%201.jpg)
+
 ![SoR2 2](/assets/img/Example%202.jpg)
+
 ![SoR2 3](/assets/img/Example%203.jpg)
 
 An example of a really bad Notch on a CRT (those little tiny composite to s-video converters):
@@ -278,10 +283,17 @@ I hope this article was helpful. Feel free to [contact me](http://manadream.blog
 ## References/Further Reading:
 
 [https://crtdatabase.com/articles/art-design](https://crtdatabase.com/articles/art-design)
+
 [https://en.wikipedia.org/wiki/Dot_crawl](https://en.wikipedia.org/wiki/Dot_crawl)
+
 [https://crtdatabase.com/articles/decoding-240p](https://crtdatabase.com/articles/decoding-240p)
+
 [https://www.extron.com/article/ntscdb1](https://www.extron.com/article/ntscdb1)
+
 [https://www.extron.com/article/ntscdb2](https://www.extron.com/article/ntscdb2)
+
 [https://www.extron.com/article/ntscdb3](https://www.extron.com/article/ntscdb3)
+
 [https://www.extron.com/article/ntscdb4](https://www.extron.com/article/ntscdb4)
+
 [https://nicole.express/2021/composite-conflict-completed.html](https://nicole.express/2021/composite-conflict-completed.html)
