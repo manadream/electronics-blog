@@ -76,7 +76,7 @@ Notch filters do not exhibit this issue. This is often referred to as dot crawl,
 
 ![dot crawl](/assets/img/Crawl.jpg)
 
-Another type of interference you will see is called "rainbowing" or "color bleed", which results from the Chroma information being polluted by the Luma signal.
+Another type of interference you will see is called "rainbowing" or "rainbow banding", which results from the Chroma information being polluted by the Luma signal.
 
 ![rainbow artifacts](/assets/img/Kramer%2008.png)
 
@@ -129,7 +129,7 @@ It also has a lot of dot crawl, so I don't recommend it.
 
 ![401D](/assets/img/Kramer.jpg)
 
-I got this one as a gift, but it looks like they can go for around $40 on eBay. It has a BNC connector for Composite video.
+I got this one as a gift, but it looks like they can go for around $15-$90 on eBay. It has a BNC connector for Composite video.
 
 ![240p Menu](/assets/img/Kramer%2007.png)
 ![SMTP Color Bars](/assets/img/Kramer%2006.png)
@@ -214,7 +214,7 @@ These images were captured with the sharpness knob at 75% of max sharpness.
 ![SMW](/assets/img/manadream%20less%20sharp%2002.png)
 ![Duck Tales](/assets/img/manadream%20less%20sharp%2001.png)
 
-As you can see, the dot crawl is significantly reduced. It can be reduced even further by lowering the sharpness.
+As you can see, the dot crawl is significantly reduced. It can be reduced even further by lowering the sharpness more.
 
 On a CRT, the visible sharpness difference between 100% sharp and 75% sharp is going to be barely noticeable, especially from a normal viewing distance.
 
@@ -222,7 +222,7 @@ Having this sharpness knob allows you to dial in the sharpness vs dot artifacts 
 
 The way these results are achieved is by having multiple stages of filtering in addition to video amplification.
 
-The manadream Notch Filter is a proper, 75-ohm input terminated, 75-ohm output impedance video filter and amplifier.
+The manadream Notch Filter is a proper, 75-ohm input terminated, 75-ohm output impedance video filter and amplifier for NTSC composite video.
 You'll notice more vibrant colors and a brighter picture than other filters using this filter.
 
 The manadream Notch Filter is available for purchase [on my store](https://manadream.shop/product/notch-filter-composite-to-s-video-converter). I also sell other retro gaming products and modding services, let me know if there's something you'd like that I don't have listed!
@@ -252,7 +252,9 @@ Streets of Rage 2 on a CRT:
 
 ![SoR2 3](/assets/img/Example%203.jpg)
 
-An example of a really bad Notch on a CRT (those little tiny composite to s-video converters):
+An example of a really bad external Notch (in one of those tiny, inline adapters) not removing Chroma information from Luma, on a CRT:
+
+![bad notch adapter](/assets/img/comp2svidbad.jpg)
 
 ![bad notch](/assets/img/CRT%20Cheapo%20CV2.jpg)
 
