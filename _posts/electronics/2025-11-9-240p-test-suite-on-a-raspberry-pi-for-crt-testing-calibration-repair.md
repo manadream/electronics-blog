@@ -165,7 +165,7 @@ Finally, add whatever other test roms you want to the `roms` folder.
 
 ## Step 5: Connect a Controller and Boot it up
 
-Get a USB controller and a micro USB to USB A adapter so that you can connect it to your pi. I used a simple SNES style controller.
+Get a USB controller (and a micro USB to USB A adapter if you're using a Pi Zero). I used a simple SNES style controller.
 
 ![Controller](/assets/img/IMG_20251109_104258.jpg)
 
