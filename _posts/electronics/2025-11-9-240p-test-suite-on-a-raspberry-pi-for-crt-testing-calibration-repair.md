@@ -14,7 +14,7 @@ This guide will go over how to set this up on a Rapspberry Pi Zero, but it will 
 
 - Original Pi 1 with RCA jack does not work at all (hangs at boot logo screen)
 - Pi 3 with 64-bit/aarch64 image (MUST use 32-bit/arm)
-- Pi Zero 2W with Pi Zero 2 images (MUST use 32-bit/arm Pi 3 image with `dtoverlay=vc4-kms-v3d,cma-384` changed to `dtoverlay=vc4-kms-v3d,cma-256` in `distroconfig.txt` and `dtoverlay=vc4-kms-v3d,cma-384,composite=1` change to `dtoverlay=vc4-kms-v3d,cma-128,composite=1` in `distroconfig-composite.txt`)
+- Pi Zero 2W with Pi Zero 2 images (MUST use 32-bit/arm Pi 3 image with `dtoverlay=vc4-kms-v3d,cma-384,composite=1` change to `dtoverlay=vc4-kms-v3d,composite=1` in `distroconfig-composite.txt`)
 
 ## Step 1: Getting Composite Output From Your Pi
 
