@@ -50,7 +50,7 @@ The cable you are using must have the correct polarity, check with a multimeter 
 
 If it is not, the cable will not work correctly. Most TRRS cables that have RCA connectors on them are not correct and need to be rewired.
 
-You can also purchase the correct cable [from adafruit]().
+You can also purchase the correct cable [from adafruit](https://www.adafruit.com/product/2881).
 
 ### Pi 5
 The Pi 5 has 2 through-holes on the PCB in a box labelled `VID` in between the `HMDI1` and `CAM/DISP 1` ports. Ground is the through-hole closest to the edge, and the video signal is the square pad.
