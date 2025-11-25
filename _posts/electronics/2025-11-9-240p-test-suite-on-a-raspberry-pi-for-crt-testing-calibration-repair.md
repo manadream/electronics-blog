@@ -10,30 +10,113 @@ I wanted something that accurately outputs 240p content, boots up as fast as pos
 Lakka is a Linux emulation distribution that directly uses RetroArch as its means of running games as well as for UI. There is no fancy EmulationStation-like interface to scroll around in and it has as little bloat as possible.
 In addition to those benefits, using RetroArch as the means of rendering video allows us to customize the specifics of that output for each core that we want to use. This was the key to getting this to work how I wanted.
 
-This guide will go over how to set this up on a Rapspberry Pi Zero, but it will work with most other Pis as well, with the difference being where to solder the composite video wires. I have notes about other Pis where needed.
+This guide will go over how to set this up on a Rapspberry Pi Zero, but it will work with most other Pis as well, with the difference being where to solder the composite video wires. I have notes about other Pis where needed. There are however some Pis that have been confirmed not to work correctly certain version of Lakka:
 
-## Step 1: Flash Lakka and Set Config
+- Original Pi 1 with RCA jack does not work at all (hangs at boot logo screen)
+- Pi 3 with 64-bit/aarch64 image (MUST use 32-bit/arm)
+- Pi Zero 2W with Pi Zero 2 images (MUST use 32-bit/arm Pi 3 image with `dtoverlay=vc4-kms-v3d,cma-384` changed to `dtoverlay=vc4-kms-v3d,cma-256` in `distroconfig.txt` and `dtoverlay=vc4-kms-v3d,cma-384,composite=1` change to `dtoverlay=vc4-kms-v3d,cma-128,composite=1` in `distroconfig-composite.txt`)
 
-Download the latest Lakka image for your Pi [from their website](https://www.lakka.tv/get/linux/) and flash it onto an SD card using one of the following USB flashers (or something you already know how to use):
+## Step 1: Getting Composite Output From Your Pi
 
-- Raspberry Pi Imager
+All Raspberry Pis can output composite video, but where the signal is output is different depending on the model.
+
+If you get a black screen, or a weird thick, jagged white line and/or shifting video when you boot up your Pi using composite video, you soldered the wires incorrectly.
+
+### Pi Zero
+
+For a Raspberry Pi Zero 1, the output is made available via 2 through-holes on the Pi's PCB. They are labelled by a box around them with the text `TV` screen printed next to it.
+
+Simply get a spare RCA or BNC cable that you can cut and use for this and solder the center/hot/signal wire to the left and the shield/ground wire to the right when looking at the board with the SD card on the left side. See the photo below.
+
+![TV Out](/assets/img/IMG_20251109_102049.jpg)
+
+Some Pi Zero 1s have the `TV` label on the left side of the box and some have it on the right, but where the wires go is not different. The video signal comes from the left side and the ground on the right.
+
+### Pi Zero 2
+
+Solder an RCA cable to the TV and GND pads on the bottom of the PCB. 
+
+It's important to solder to the correct pads. The video signal is from the pad to the LEFT of `TV` and ground is to the right of it. See the following image:
+
+![TV Out](/assets/img/IMG_20251125_013254.jpg)
+
+### Pi 1 A+/B+ through Pi 4 B
+
+In the case of Pi 1 B+/A+ through 4 B, the 1/8" headphone jack is actually a TRRS AV out jack. 
+
+The cable you are using must have the correct polarity, check with a multimeter that the TRRS output is
+
+|Left Audio|Right Audio|Ground|Video|
+
+If it is not, the cable will not work correctly. Most TRRS cables that have RCA connectors on them are not correct and need to be rewired.
+
+You can also purchase the correct cable [from adafruit]().
+
+### Pi 5
+The Pi 5 has 2 through-holes on the PCB in a box labelled `VID` in between the `HMDI1` and `CAM/DISP 1` ports. Ground is the through-hole closest to the edge, and the video signal is the square pad.
+
+
+## Step 2: Flash Lakka and Configure Composite Video
+
+Each kind of Pi only works with this guide using a specific Lakka image.
+
+Download the following Lakka image for your Pi [from their website](https://www.lakka.tv/get/linux/rpi/):
+
+- Pi Zero 1: "for Raspberry Pi Zero / Zero W (arm)"
+- Pi Zero 2: "for Raspberry Pi 3 (arm)" *The images labelled for Pi zero 2 DO NOT WORK properly*
+- Pi 1 B+/A+: "for Raspberry Pi (arm)"
+- Pi 2: "for Raspberry Pi 2 (arm)"
+- Pi 3: "for Raspberry Pi 3 (arm)" *the file downloads as Lakka-RPi2.arm-5.0, this is fine*
+- Pi 4: "for Raspberry Pi 4 (aarch64)" *note: I have not tested a pi 4*
+- Pi 5: "for Raspberry Pi 5 (aarch64)" *note: I have not tested a pi 5*
+
+ Flash the image onto an SD card using one of the following USB flashers (or something you already know how to use):
+
 - Popsicle USB Flasher
 - Balena Etcher
 - win32diskimager
 
-Once it is done flashing, insert it into your pi and plug it into an HDMI monitor. Let it run and do its thing to finish setting up. Once it's done and is booted to the Lakka menu, turn off the Pi and take the SD card out.
+Once it is done flashing, you'll need to edit the boot config files to output composite video.
 
-## Step 2: Configuring Lakka
+Reinsert the SD card into you computer so you can access the files on the SD card and modify them.
+
+You should see the SD card show up as `LAKKA` in your file manager.
+
+1. Open the SD card partition labelled `LAKKA` in your file manager.
+2. Open the file `config.txt` in a text editor.
+3. Find the line that has `include distroconfig.txt` and comment it out by adding a `#` to the beginning of the line.
+4. Find the line that has `#include distroconfig-composite.txt` and uncomment it by removing the `#` at the beginning of the line.
+5. Save these changes. Those two lines should now look like this:
+```
+#include distroconfig.txt
+include distroconfig-composite.txt
+```
+6. Next, open the file `cmdline.txt` in a text editor.
+7. Add `video=Composite-1:720x480@60ie` to the end of the one line in the file and save it. It should look something like this (the UUIDs and other values will likely be different and there may be more than just these parameters in the file):
+```
+boot=UUID=1704-1837 disk=UUID=b6a5e937-7d11-4142-87f9-3c4a5a54cfa6 quiet console=tty0 video=Composite-1:720x480@60ie
+```
+8. __Raspberry Pi Zero 2 only:__ open `distroconfig-composite.txt` and change `dtoverlay=vc4-kms-v3d,cma-384,composite=1` to `dtoverlay=vc4-kms-v3d,composite=1` by removing `cma-384,` from that line.
+
+Save those file changes if you haven't already, and insert the SD card into your pi and plug it into a Composite video monitor or CRT, then power it on.
+
+Let it run and do its thing to finish setting up. Once it's done and is booted to the Lakka menu, turn off the Pi and take the SD card out.
+
+![Lakka Menu](/assets/img/IMG_20251109_125337.jpg)
+
+## Step 3: Configuring Lakka for 240p Output
 
 I created these configs to be as close as possible to the output of an actual SNES, NES and Genesis. I loaded the same 240p suite on the Pi and my consoles and went back and forth and adjusted the Pi's core configs until the pictures were the same size and positioning as my consoles. You can adjust these to your liking, but they should be accurate and thus good for calibration and repair. I also set the Lakka UI layout and scale such that it is usable in 240p with these configs.
 
 Reinsert the SD card into you computer so you can access the files on the SD card and modify them.
 
-Editing text files on a Pi's SD card can be tricky depending on the OS your computer uses, but the following steps should more or less apply to any OS you use. If you need specific guidance, [this guide on Lakka's site](https://www.lakka.tv/doc/Accessing-Lakka-filesystem/) has more info and there are guides elsewhere for how to edit files on a flashed SD card in your OS. Once you understand and are able to edit text files on the SD card, do the following:
+NOTE: On Mac or Windows you will have to do this section via SSH if you cannot mount ext3/ext4 filesystems. See [this guide on Lakka's site](https://www.lakka.tv/doc/Accessing-Lakka-filesystem/) if you are not using Linux to learn how you can edit files on the ext3/ext4 partition. If you are using Linux, the following guide is exactly what you need to do.
 
-1. Open the SD card partition labelled `LAKKA_DISK` in your file manager.
-2. Navigate to the folder `.config/retroarch/config/` (you may need to access it as root/admin).
-3. Create the folder `QuickNES` and place the following text in a file called `QuickNES.cfg` in the `QuickNES` folder you just created (this is the NES core that will be used).
+Once you understand and are able to edit text files on the SD card, do the following:
+
+1. Open the SD card partition labelled `LAKKA_DISK` in your file manager (or access the pi over SSH and you'll be in this location by default).
+2. Navigate to the folder `.config/retroarch/config/` (you may need to access it as root/admin). NOTE: if you are accessing the Pi via SSH, the full path is `/storage/.config/retroarch/config/`
+3. Create the folder `QuickNES` in `.config/retroarch/config/` and place the following text in a file called `QuickNES.cfg` in the `QuickNES` folder you just created (this is the NES core that will be used).
 ```
 aspect_ratio_index = "23"
 custom_viewport_height = "224"
@@ -45,7 +128,7 @@ video_fullscreen_y = "240"
 xmb_layout = "1"
 menu_scale_factor = "0.75"
 ```
-4. Create the folder `PicoDrive` and place the following text in a file called `PicoDrive.cfg` in the `PicoDrive` folder you just created (this is the Genesis/Mega Drive core that will be used). Note that some games do not produce audio properly on some versions of PicoDrive (I personally noticed Sonic and Knuckles and Sonic 2 have this problem), but I chose it because it runs the games the fastest.
+4. Create the folder `PicoDrive` in `.config/retroarch/config/` and place the following text in a file called `PicoDrive.cfg` in the `PicoDrive` folder you just created (this is the Genesis/Mega Drive core that will be used). Note that some games do not produce audio properly on some versions of PicoDrive (I personally noticed Sonic and Knuckles and Sonic 2 have this problem), but I chose it because it runs the games the fastest.
 ```
 aspect_ratio_index = "23"
 custom_viewport_height = "224"
@@ -57,7 +140,7 @@ video_fullscreen_y = "240"
 xmb_layout = "1"
 menu_scale_factor = "0.75"
 ```
-5. Create the folder `Snes9x 2002` and place the following text in a file called `Snes9x 2002.cfg` in the `Snes9x 2002` folder you just created (this is the SNES core that will be used). I chose 2002 because it performs the best of the Snes9x cores.
+5. Create the folder `Snes9x 2002` in `.config/retroarch/config/` and place the following text in a file called `Snes9x 2002.cfg` in the `Snes9x 2002` folder you just created (this is the SNES core that will be used). I chose 2002 because it performs the best of the Snes9x cores.
 ```
 aspect_ratio_index = "23"
 custom_viewport_height = "224"
@@ -70,24 +153,9 @@ xmb_layout = "1"
 menu_scale_factor = "0.75"
 ```
 
-Next you'll want to set up Lakka to output composite video:
+Now when you load a rom using one of these three cores, they will correctly display in 240p.
 
-1. Open the SD card partition labelled `LAKKA` in your file manager.
-2. Open the file `config.txt` in a text editor.
-3. Find the line that has `include distroconfig.txt` and comment it out by adding a `#` to the beginning of the line.
-4. Find the line that has `#include distroconfig-composite.txt` and uncomment it by removing the `#` at the beginning of the line.
-5. Save these changes. Those two lines should now look like this:
-```
-#include distroconfig.txt
-include distroconfig-composite.txt
-```
-6. Next, open the file `cmdline.txt` in a text editor.
-7. Add `video=Composite-1:720x480@60ie` to the end of the one line in the file and save it. It should look something like this (the UUIDs and other values will likely be different):
-```
-boot=UUID=1704-1837 disk=UUID=b6a5e937-7d11-4142-87f9-3c4a5a54cfa6 quiet console=tty0 video=Composite-1:720x480@60ie
-```
-
-## Step 3: Copy 240p Test Suites to the Pi
+## Step 4: Copy 240p Test Suites to the Pi
 
 With your SD card still inserted, download the SNES and Genesis 240p Test Suites [from here](https://artemiourbina.itch.io/240p-test-suite), rename them to `240p-SNES.sfc` and `240p-Genesis.bin` (or whatever you want) and copy them to the `roms` folder on `LAKKA_DISK`.
 
@@ -95,43 +163,13 @@ Then download the NES 240p Test Suite [from here](https://github.com/pinobatch/2
 
 Finally, add whatever other test roms you want to the `roms` folder.
 
-## Step 4: Getting Composite Output From Your Pi
-
-All Raspberry Pis can output composite video, but where the signal is output is different depending on the model.
-
-For a Raspberry Pi Zero 1, the output is made available via 2 through-holes on the Pi's PCB. They are labelled by a box around them with the text `TV` screen printed next to it.
-
-Simply get a spare RCA or BNC cable that you can cut and use for this and solder the center/hot/signal wire to the left and the shield/ground wire to the right when looking at the board with the SD card on the left side. See the photo below.
-
-![TV Out](/assets/img/IMG_20251109_102049.jpg)
-
-For other Raspberry Pis it will be different where the video signal comes from:
-
-- Pi 1 through Pi 4: TRRS port with a specific cable.
-- Pi Zero 2: Solder to the TV and GND pads on the bottom of the PCB.
-- Pi 5: 2 through-holes on the PCB in a box labelled `VID` in between the `HMDI1` and `CAM/DISP 1` ports.
-
-If you get a weird thick, jagged white line and/or shifting video when you boot up your Pi using composite video, you soldered the wires in reverse.
-
-Or, in the case of Pi 1 through 4, the cable you are using doesn't have the correct polarity, check with a multimeter that the TRRS output is
-
-|Left Audio|Right Audio|Ground|Video|
-
-and if it is not, that's your problem. Most TRRS cables that have RCA connectors on them are not correct and need to be rewired.
-
-Some Pi Zero 1s have the `TV` label on the left side of the box and some have it on the right, but where the wires go is not different. The video signal comes from the left side and the ground on the right.
-
 ## Step 5: Connect a Controller and Boot it up
 
 Get a USB controller and a micro USB to USB A adapter so that you can connect it to your pi. I used a simple SNES style controller.
 
 ![Controller](/assets/img/IMG_20251109_104258.jpg)
 
-If you want you can get a case or 3D print one. I printed [this case](https://www.printables.com/model/877991-raspberry-pi-zero-2-w-case).
-
-![In a case](/assets/img/IMG_20251109_104315.jpg)
-
-Connect the controller to the pi, connect the Composite video output to a CRT, and then connect power.
+Connect the controller to the pi, connect the Composite video output to a Composite display or CRT, and then connect power.
 
 You should see it boot up and display the main menu in 480i mode.
 
@@ -172,7 +210,7 @@ If you want my exact setup, you can also [download my retroarch.cfg file](/asset
 
 ## Bonus Step: Get Audio from your Pi
 
-To get analog audio from a Pi Zero or a Pi 5 is a little more involved, and I recommend [this guide](https://learn.adafruit.com/introducing-the-raspberry-pi-zero/audio-outputs) for that. Alternatively, you can get a USB Audio device that has a headphone output and then get a headphone (1/8" or 3.5mm) to RCA cable. You'd then need to follow the steps below but for `audio_device` you'd need to determine what your USB audio device ID is by SSHing into the pi and running `aplay -L`, so that's for advanced users. Yet another option is to get an HDMI Audio extractor to use the HDMI audio output, but at that point you might as well get a different Pi.
+To get analog audio from a Pi Zero or a Pi 5 is a little more involved, and I recommend [this guide](https://learn.adafruit.com/introducing-the-raspberry-pi-zero/audio-outputs) for that. Alternatively, you can get a USB Audio device that has a headphone output and then get a headphone (1/8" or 3.5mm) to RCA cable. You'd then need to follow the steps below, but for `audio_device` you'd need to determine what your USB audio device ID is by SSHing into the pi and running `aplay -L`, so that's for advanced users. Yet another option is to get an HDMI Audio extractor to use the HDMI audio output, but at that point you might as well get a different Pi.
 
 Here I will cover the few extra steps you need to get audio from your Pi 1 through 4 (this was done on a Pi 1). 
 
