@@ -10,11 +10,12 @@ I wanted something that accurately outputs 240p content, boots up as fast as pos
 Lakka is a Linux emulation distribution that directly uses RetroArch as its means of running games as well as for UI. There is no fancy EmulationStation-like interface to scroll around in and it has as little bloat as possible.
 In addition to those benefits, using RetroArch as the means of rendering video allows us to customize the specifics of that output for each core that we want to use. This was the key to getting this to work how I wanted.
 
-This guide will go over how to set this up on a Rapspberry Pi Zero, but it will work with most other Pis as well, with the difference being where to solder the composite video wires. I have notes about other Pis where needed. There are however some Pis that have been confirmed not to work correctly certain version of Lakka:
+This guide will go over how to set this up on a Rapspberry Pi Zero, but it will work with most other Pis as well, with the difference being where to solder the composite video wires. I have notes about other Pis where needed.
 
+There are, however, some Pis that have been confirmed not to work correctly with certain version of Lakka:
 - Original Pi 1 with RCA jack does not work at all (hangs at boot logo screen)
-- Pi 3 with 64-bit/aarch64 image (MUST use 32-bit/arm)
-- Pi Zero 2W with Pi Zero 2 images (MUST use 32-bit/arm Pi 3 image with `dtoverlay=vc4-kms-v3d,cma-384,composite=1` change to `dtoverlay=vc4-kms-v3d,composite=1` in `distroconfig-composite.txt`)
+- Pi 3 with 64-bit/aarch64 image does not work (MUST use 32-bit/arm). Also note that one the Pi 3s that I have tried there is a weird black graphical glitch in the top right corner.
+- Pi Zero 2W with Pi Zero 2 images does not work (MUST use 32-bit/arm Pi 3 image with `dtoverlay=vc4-kms-v3d,cma-384,composite=1` change to `dtoverlay=vc4-kms-v3d,composite=1` in `distroconfig-composite.txt`)
 
 ## Step 1: Getting Composite Output From Your Pi
 
