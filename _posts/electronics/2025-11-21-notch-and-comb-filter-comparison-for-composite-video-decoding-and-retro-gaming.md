@@ -383,7 +383,7 @@ The notch filter on a RetroTink 5x on an LCD:
 
 And that's all I got!
 
-I hope this article was helpful. Feel free to [contact me](http://manadream.blog/about/) if you have any questions or suggestions for how to improve this article for others.
+I hope this article was helpful. Feel free to [contact me](http://manadream.blog/about/) if you have any questions or suggestions for how to improve this article for others, and [go to my shop](https://manadream.shop) to check out the manadream notch filter and other stuff I've made/modded.
 
 ## References/Further Reading:
 
