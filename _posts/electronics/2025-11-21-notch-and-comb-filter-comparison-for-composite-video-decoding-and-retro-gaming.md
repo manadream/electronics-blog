@@ -33,6 +33,7 @@ This article has the following sections:
 
 [References/Further Reading](#referencesfurther-reading)
 
+
 ## Basic Composite Video Theory
 
 Composite video (the Yellow RCA connector on a console's AV cable) is constructed by overlaying separate Luma (brightness) and Chroma (color) signals on top of each other so that only one wire (aside from ground) is needed to transmit the video.
@@ -50,6 +51,7 @@ In order to use an external filter, the TV or Capture device you are connecting 
 
 ![S-Video connector](/assets/img/S.video.socket.png)
 
+
 ## Why Use Composite?
 
 A lot of people consider Composite video to be the worst option (aside from RF) when it comes to video output.
@@ -62,6 +64,7 @@ The TL;DR of that article is, Composite video allows for blending of colors that
 It also allows for a wider range of colors than the console could normally create by using two different colors next to each other that get blended into a new color.
 
 ![Composite art example](/assets/img/CRT%20Art.png)
+
 
 ## Aren't Comb Filters the Best Option?
 
@@ -94,6 +97,7 @@ Both Comb filters and Notch filters will exhibit dot crawl and rainbow artifacts
 The only way to not have these artifacts is to keep Chroma and Luma separate from the very beginning, but you then lose some of the artistic qualities that Composite offers.
 
 The goal, then, is to use a filter that minimizes dot crawl and rainbow artifacts, and does not have hanging dots. This can only be done with a Notch filter, as you'll see.
+
 
 ## Comb Filter Comparisons
 
@@ -140,6 +144,7 @@ If you ignore that oddity, you can see the kinds of horizontal dot artifacts, ha
 
 Lots of CRTs have 2-line and 3-line comb filters built into them, so the picture will look something like this (minus the weird color banding).
 
+
 ### Kramer VP-413 (3D Comb Filter)
 
 ![VP-413](/assets/img/IMG_20251204_123442.jpg)
@@ -167,6 +172,7 @@ You can see clearly the presence of typical comb hanging dot artifacts in:
 
 It does do a better job than the 3-line comb, but it still has dot artifacts that all comb filters have.
 
+
 ## Notch Filter Comparisons
 
 Notch filters work by splitting the Composite vide signal into Luma (Y) and Chroma (C) signals using a band-stop filter (also called a notch filter) for the Luma part of the signal and a band-pass filter for the Chroma part of the signal.
@@ -186,6 +192,7 @@ All comparisons were done using an I-O DATA GV-USB2 S-Video capture device and t
 
 Again, the 240p Test Suite images are from the Sega Genesis. This console has some jailbars and pretty bad rainbowing, so the video isn't the best, but I think it is a good test because it shows how well different filters handle the imperfect video, plus this is what most stock Genesis consoles are going to look like.
 
+
 ### Tributaries C2S
 
 ![C2S](/assets/img/Tributaries.jpg)
@@ -204,6 +211,7 @@ I bought this on eBay for about $30, but I'm not sure how easy they are to find.
 It has noticeable ghosting/echoing which is very obvious on the right side of Mario's hat in the Mario 64 pic.
 It also has a lot of dot crawl, so I don't recommend it.
 
+
 ### Kramer 401D
 
 ![401D](/assets/img/Kramer.jpg)
@@ -220,6 +228,7 @@ I got this one as a gift, but it looks like they can go for around $15-$90 on eB
 ![Duck Tales](/assets/img/Kramer%2001.png)
 
 The dot crawl on this one is very bad, especially on Duck Tales. It doesn't have as much ghosting/echoing as the Tributaries though.
+
 
 ### Extron VYC 100N
 
@@ -239,6 +248,7 @@ It has a BNC connector for Composite video, and two BNC connectors for S-Video i
 
 The dot crawl on this one is better than the Tributaries and the Kramer, though the rainbow artifacts are about the same (which you can see on the left side of the white text in the SMW screens and in the Sonic image).
 
+
 ### Entech CSVC-1
 
 ![CSVC-1](/assets/img/Entech.jpg)
@@ -255,6 +265,7 @@ I got this one for about $30. You can find them online for $25-$40. It has a mal
 ![Duck Tales](/assets/img/Entech%2001.png)
 
 This one has less dot crawl and rainbow artifacts than the Tributaries, Kramer and Extron. It still exhibits a fair bit of dot crawl on NES games however.
+
 
 ### manadream Notch Filter
 
@@ -306,9 +317,11 @@ You'll notice more vibrant colors and a brighter picture than other filters usin
 
 The manadream Notch Filter is available for purchase [on my store](https://manadream.shop/product/notch-filter-composite-to-s-video-converter). I also sell other retro gaming products and modding services, let me know if there's something you'd like that I don't have listed!
 
+
 ## Side-By-Side Comparisons
 
 Here are some of these filters compared side-by-side. I have chosen the images that show the differences most clearly.
+
 
 ### Notch Side-By-Sides
 
@@ -320,6 +333,7 @@ Here are some of these filters compared side-by-side. I have chosen the images t
 
 ![Side by Side 4](/assets/img/Side%20By%20Side%2004.png)
 
+
 ### Comb and Notch Side-By-Sides
 
 ![Side by Side 5](/assets/img/Side%20By%20Side%2005.png)
@@ -330,6 +344,7 @@ Here are some of these filters compared side-by-side. I have chosen the images t
 
 ![Side by Side 8](/assets/img/Side%20By%20Side%2008.png)
 
+
 ## Bonus Images
 
 These are some images/comparisons that were provided to me by others and/or are on CRTs instead of direct captures.
@@ -339,13 +354,16 @@ Comb filter dot artifacts on a PVM, you can see it in the red squares on the bot
 
 ![PVM artifacts](/assets/img/IMG_20251205_000357.jpg)
 
+
 Comb dot artifacts on an RCA set:
 
 ![RCA dot artifacts](/assets/img/IMG_20251124_202230.jpg)
 
+
 Comb dot artifacts on a Sony Trinitron, visible in the red text:
 
 ![Trinitron dot artifacts](/assets/img/IMG_20251202_013223.jpg)
+
 
 Streets of Rage 2 on a CRT:
 
@@ -355,35 +373,43 @@ Streets of Rage 2 on a CRT:
 
 ![SoR2 3](/assets/img/Example%203.jpg)
 
+
 An example of a really bad external Notch (in one of those tiny, inline adapters) not removing Chroma information from Luma, on a CRT:
 
 ![bad notch adapter](/assets/img/comp2svidbad.jpg)
 
 ![bad notch](/assets/img/CRT%20Cheapo%20CV2.jpg)
 
+
 An example of a typical 2-line comb filter on a CRT (notice the hanging dots):
 
 ![typical 2-line comb](/assets/img/CRT%20Comb%20CV2.jpg)
+
 
 The comb on my Toshiba MW24FM3 CRT (again, notice the hanging dots):
 
 ![toshiba comb](/assets/img/IMG_20250920_142259.jpg)
 
+
 A mediocre comb on an LCD:
 
 ![lcd comb](/assets/img/LCD%20Comb%20CV2.jpg)
+
 
 Comb (Top) vs. Notch (bottom) on Castlevania 2's title screen text:
 
 ![CV2 Comb Notch](/assets/img/signal-2025-08-21-10-14-19-560.jpg)
 
+
 The notch filter on a RetroTink 5x on an LCD:
 
 ![RetroTink Notch](/assets/img/tink%20notch.jpg)
 
+
 And that's all I got!
 
 I hope this article was helpful. Feel free to [contact me](http://manadream.blog/about/) if you have any questions or suggestions for how to improve this article for others, and [go to my shop](https://manadream.shop) to check out the manadream notch filter and other stuff I've made/modded.
+
 
 ## References/Further Reading:
 
