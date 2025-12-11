@@ -253,7 +253,7 @@ The dot crawl on this one is better than the Tributaries and the Kramer, though 
 
 ![CSVC-1](/assets/img/Entech.jpg)
 
-I got this one for about $30. You can find them online for $25-$40. It has a male RCA connector, so I had to use a coupler to connect it to the male RCA connectors from my consoles.
+I got this one for about $30 [from kitty666cats on eBay](https://www.ebay.com/itm/227126035252). It has a male RCA connector, so I had to use a coupler to connect it to the male RCA connectors from my consoles.
 
 ![240p Menu](/assets/img/Entech%2007.png)
 ![SMTP Color Bars](/assets/img/Entech%2006.png)
