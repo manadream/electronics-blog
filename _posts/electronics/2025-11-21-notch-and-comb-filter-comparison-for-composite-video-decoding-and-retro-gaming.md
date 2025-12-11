@@ -134,7 +134,7 @@ I bought this on Ebay for $34. You may be asking, why buy a video switcher for t
 
 For whatever reason, this filter had a lot of noise in the Chroma signal, which you can see as horizontal sections looking off-color. I did what I could to reduce noise as much as possible, but this unit might have something wrong with it.
 
-If you ignore that oddity, you can see the kinds of horizontal dot artifacts, hanging dots, very clearly in:
+If you ignore that oddity, you can see the kinds of horizontal dot artifacts combs have, hanging dots, very clearly in:
 
 - The Streets of Rage 2 screenshot along the top of the fence and the bottom of the windows and the top of the bricks.
 - The top and bottom of the red letters in the 240p test suite.
