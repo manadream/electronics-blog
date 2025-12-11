@@ -21,8 +21,7 @@ Price: $60-$120
 This is [the listing](https://www.ebay.com/itm/405964367768) I purchased mine from. It was cheaper than buying from a US seller, so be aware that the price will be higher
 from a US seller.
 
-This one was recommended to me by a friend and it turned out to be the highest quality picture,
-though it is not perfect.
+This one was recommended to me by a fellow CRT enthusiast and community member, kitty666cats/Mike Lindquist, and it turned out to be the highest quality picture of the ones I tested.
 
 ![Color Bars](/assets/img/GV-USB2%201.png)
 ![240p Girl](/assets/img/GV-USB2%203.png)
