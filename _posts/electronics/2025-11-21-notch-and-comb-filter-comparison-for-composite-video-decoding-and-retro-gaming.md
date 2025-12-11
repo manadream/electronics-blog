@@ -57,7 +57,7 @@ In order to use an external filter, the TV or Capture device you are connecting 
 A lot of people consider Composite video to be the worst option (aside from RF) when it comes to video output.
 This is simply not true as Composite video offers some artistic benefits that other output options do not (including raw S-Video output from your console.)
 
-[This Article](https://crtdatabase.com/articles/art-design) goes into great detail on why Composite is the best video format for a lot of retro games, even into the PS1/Saturn/N64 era.
+[This Article by Eli Krause](https://crtdatabase.com/articles/art-design) goes into great detail on why Composite is the best video format for a lot of retro games, even into the PS1/Saturn/N64 era.
 I highly recommend giving that article a read to better understand why Composite video is important.
 
 The TL;DR of that article is, Composite video allows for blending of colors that are especially important for dithering (Sonic Waterfall and Streets of Rage 2 lamp lighting are classic examples).
@@ -179,7 +179,7 @@ Notch filters work by splitting the Composite vide signal into Luma (Y) and Chro
 
 ![notch filter diagram](/assets/img/ntscdb2fig2.png)
 
-[This article](https://crtdatabase.com/articles/decoding-240p) goes into detail explaining how this works, as well as how comb filters work and the technical differences. It is a relatively short and informative read which I recommend checking out if you want to understand better what is going on with these filters.
+[This article by Eli Krause](https://crtdatabase.com/articles/decoding-240p) goes into detail explaining how this works, as well as how comb filters work and the technical differences. It is a relatively short and informative read which I recommend checking out if you want to understand better what is going on with these filters.
 
 I purchased 4 different notch filters to compare to each other, and to [the one I have made](https://manadream.shop/product/notch-filter-composite-to-s-video-converter). I will go over each one and talk about how they compare to each other.
 
