@@ -142,5 +142,5 @@ Composite
 
 ![Composite](/assets/img/IMG_20260121_164208.jpg)
 
-This article is also hosted on [Sunthar.com](https://electron.sunthar.com/manadream/article/sony-kv-13m42---rgb-and-component-mod)
+This article is also hosted on [Sunthar.com](https://my.sunthar.com/manadream/product/sony-kv-13m42-rgb-and-component-mod)
 
