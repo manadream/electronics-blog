@@ -3,7 +3,7 @@ layout: post
 title:  "Sony KV-13FM12 - RGB SCART Mod"
 tags: CRT
 ---
-This guide will cover how to RGB SCART mod the 32" Sony KV-13FM12. RGB Modding this CRT is pretty straightforward as all the solder points are accessible without removing the main A board.
+This guide will cover how to RGB SCART mod the Sony KV-13FM12. RGB Modding this CRT is pretty straightforward as all the solder points are accessible without removing the main A board.
 
 ![set](/assets/img/IMG_20260127_173646.jpg)
 
