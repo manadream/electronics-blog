@@ -1,0 +1,10 @@
+- see what UI element consumed the click
+- screen space shaders with canvas layer and color rect
+- pixel perfect text shadows
+- viewport scaling for fixed resolution games
+- drag n drop + click click drag
+- split screen multiplayer
+- UI containers for easy layouts
+- Tweens
+- CSV file reading for organized data
+- reading translations from CSV

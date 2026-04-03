@@ -17,7 +17,7 @@ On the bottom of this board, locate R1084, R1085, R1086 and remove them.
 
 ![remove resistors](/assets/img/IMG_20260126_225719.jpg)
 
-Then locate the resistors R1079, R1080 and R1081. Lift the side of these resistors that is closes to the edge of the PCB and insert 1N4148 diodes into the holes the resistors were lifted from.
+Then locate the resistors R1079, R1080 and R1081. Lift the side of these resistors that is closest to the edge of the PCB and insert 1N4148 diodes into the holes the resistors were lifted from.
 
 Be sure to insert the cathode (-) side of the diodes into the holes and solder them in place. Then, solder the other sides of the diodes to the lifted resistor legs.
 
