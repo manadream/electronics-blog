@@ -76,5 +76,5 @@ And that's it for the mod! The picture will appear on the Video input when you p
 ![example](/assets/img/IMG_20260413_153319.jpg)
 ![example](/assets/img/IMG_20260413_153413.jpg)
 
-This article is also hosted on [Sunthar.com](https://manadream.shop/article/jvc-c-13111-rgb-scart-mod)
+This article is also hosted on [Sunthar.com](https://my.sunthar.com/manadream/article/jvc-c-13111-rgb-scart-mod)
 
