@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Memorex MT2024 / Haier 21F7a-P / Durabrand BH2004D / Insignia NS-13CTV Service Menu Access"
+title:  "Memorex MT2024 / Haier 21F7A-P / Durabrand BH2004D / Insignia NS-13CTV Service Menu Access"
 tags: CRT
 ---
 The service manual lists the remote button combo to get into the service menu for these sets as “MUTE” -> “CALL” -> “-/--“ -> “CALL” -> “MUTE” which is misleading because "CALL" is NOT the button labeled "RECALL".
