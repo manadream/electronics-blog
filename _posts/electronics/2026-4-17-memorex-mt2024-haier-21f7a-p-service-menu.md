@@ -5,7 +5,9 @@ tags: CRT
 ---
 The service manual lists the remote button combo to get into the service menu for these sets as “MUTE” -> “CALL” -> “-/--“ -> “CALL” -> “MUTE” which is misleading because "CALL" is NOT the button labeled "RECALL".
 
-The "CALL" button label is actually referring to the button labelled "DISPLAY". So the combo is “MUTE” -> “DISPLAY” -> “-/--“ -> “DISPLAY” -> “MUTE”.
+The "CALL" button label is actually referring to the button labelled "DISPLAY".
+
+So the combo is “MUTE” -> “DISPLAY” -> “-/--“ -> “DISPLAY” -> “MUTE”.
 
 I was trying to get into the service menu for a Memorex MT2024 and I kept interpreting "CALL" as referring to the button named "RECALL" on the remote, which you can see below.
 
