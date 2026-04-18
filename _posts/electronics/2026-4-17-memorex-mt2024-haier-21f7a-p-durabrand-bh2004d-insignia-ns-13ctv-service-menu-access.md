@@ -9,7 +9,7 @@ The "CALL" button label is actually referring to the button labelled "DISPLAY".
 
 So the combo is “MUTE” -> “DISPLAY” -> “-/--“ -> “DISPLAY” -> “MUTE”.
 
-I was trying to get into the service menu for a Memorex MT2024 and I kept interpreting "CALL" as referring to the button named "RECALL" on the remote, which you can see below.
+I was trying to get into the service menu for a [Memorex MT2024](https://crtdatabase.com/crts/memorex/memorex-mt2024) and I kept interpreting "CALL" as referring to the button named "RECALL" on the remote, which you can see below.
 
 ![Memorex MT2024 Remote](/assets/img/IMG_20260417_205200.jpg)
 
