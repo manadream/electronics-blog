@@ -7,7 +7,7 @@ This guide will cover how to S-Video mod the 13" Sony KV-13M42 BA-4D Chassis.
 
 With the way I did this install, S-Video will be on Video 1 and composite on Video 2, but they will both use the same audio inputs. It is possible (and relatively easy) to have them use their own audio inputs, and I will note how to do that in the section of the guide that covers the audio portion.
 
-![set](/assets/img/_MG_0016.JPG)
+![set](/assets/img/IMG_0016.JPG)
 
 ## Step 1: Enable Video 2 and S-Video in the Service Menu
 
@@ -95,13 +95,13 @@ That's it! You should now get S-Video on Video 1, Composite on Video 2, and they
 
 # S-Video Photos
 
-![S-Video](/assets/img/_MG_0024.JPG)
+![S-Video](/assets/img/IMG_0024.JPG)
 
-![S-Video](/assets/img/_MG_0020.JPG)
+![S-Video](/assets/img/IMG_0020.JPG)
 
-![S-Video](/assets/img/_MG_0028.JPG)
+![S-Video](/assets/img/IMG_0028.JPG)
 
-![S-Video](/assets/img/_MG_0031.JPG)
+![S-Video](/assets/img/IMG_0031.JPG)
 
 
 This article is also hosted on [Sunthar.com](https://my.sunthar.com/manadream/article/sony-kv-13m42-s-video-mod)
