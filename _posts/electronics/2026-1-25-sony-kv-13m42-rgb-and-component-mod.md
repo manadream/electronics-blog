@@ -3,7 +3,7 @@ layout: post
 title:  "Sony KV-13M42 - RGB and Component Mod"
 tags: CRT
 ---
-This guide will cover how to RGB BNC mod and Component RCA mod the 13" Sony KV-13M42 BA-4D Chassis.
+This guide will cover how to RGB BNC/SCART mod and Component RCA mod the 13" Sony KV-13M42 BA-4D Chassis.
 
 ![set](/assets/img/IMG_20260121_164259.jpg)
 
@@ -77,11 +77,13 @@ Insert the cathode (-) side of three 1N4148 diodes into the holes from the lifte
 
 ![insert diodes](/assets/img/IMG_20260121_154638.jpg)
 
-Connect 3 wires to the cathode (-) side of the diodes. These will go to the BNC connectors for RGB.
+![diodes without component install](/assets/img/IMG_20260424_133901.jpg)
+
+Connect 3 wires to the cathode (-) side of the diodes. These will go to the BNC/SCART connections for RGB.
 
 Also connect a wire to the other pin on the SPDT switch used in the component mod to supply 5V to the blanking input. Wire a diode and a 1K resistor inline and connect this wire to the cathode (-) side of D003 as shown in the image above.
 
-## Step 2: Connect Wires and Termination Resistors to BNC connectors
+## Step 2 (BNC): Connect Wires and Termination Resistors to BNC connectors
 
 Take your BNC connectors (or RCA if you prefer) and drill holes in the shell to place them where you want. I chose on the right side of the back.
 
@@ -104,6 +106,46 @@ This image is for an RGB SCART mod, but it can be used as a reference for how ev
 ![RGB SCART mux](/assets/img/kv-13m42-rgb-mux.png)
 
 That is all you need to do for the RGB mod. You should now be able to set the SPDT switch to send 5V to RGB Blanking and see your RGB input on the screen.
+
+If you did both the component and RGB mods, you should be able to switch between the two with the SPDT switch, but you cannot use both inputs at the same time.
+
+## Step 2 (SCART): Prepare and mount SCART port
+
+You already wired up the RGB and blanking wires above, what's left is audio and sync.
+
+For audio, connect both L and R wires to the negative (-) side of C201.
+
+For Sync, connect the yellow wire to the negative (-) side of C200, or to the center lead of the composite input jack.
+
+![audio and sync for RGB SCART](/assets/img/IMG_20260424_133846.jpg)
+
+![RGB SCART mux](/assets/img/kv-13m42-rgb-mux.png)
+
+If you purchased a SCART port from Sunthar, you can follow the instructions on [his site](https://sector.sunthar.com/guides/crt-rgb-mod/sony-ba-4d.html#sample-mux-board-configuration) to prepare your SCART port.
+
+CRT Database also has a [great guide](https://crtdatabase.com/modding/wiring-and-installing-a-scart-connector) on creating a clean SCART connector setup, so check that out as well for more info.
+
+TLDR info for making your own is:
+
+- RGB inputs are 75 Ohm terminated then connect to your RGB wires from earlier with 1K Ohm resistors.
+- The Blanking input is connected to a 1N4148 diode, then a 1K Ohm resistor to the blanking wire from earlier.
+- Sync input is connected directly to the sync wire soldered earlier.
+- Audio left and right are connected to the audio wires soldered earlier with 1K Ohm resistors inline.
+- Ground is connected to the ground wires soldered earlier.
+
+![Prepared RGB MUX](/assets/img/IMG_20260424_175348.jpg)
+
+Next you'll need to cut the hole for the port. I placed it above the stock inputs, next to the SONY logo. See the photo below.
+
+![audio and sync for RGB SCART](/assets/img/IMG_20260424_154244.jpg)
+
+![audio and sync for RGB SCART](/assets/img/IMG_20260424_192157.jpg)
+
+I used a [3D-printed SCART port panel](https://www.printables.com/model/1446440-scart-female-connector-plate) to cover up any not-so-perfect cutting I did for the port.
+
+To do the actual cutting I drew an outline of the port using the 3D-printed part and then used a sharp razor blade box cutter to cut the outline out. Then I drilled holes to screw into the port using some screws I found that were the right size to thread into the plastic of the SCART port. You can see the final results below. I modified the SCART port cover a bit to extend over some exposed portions of the case because I cut a bit too much plastic off for the port location I chose.
+
+After you've mounted it and wired the port, you're all set!
 
 If you did both the component and RGB mods, you should be able to switch between the two with the SPDT switch, but you cannot use both inputs at the same time.
 
