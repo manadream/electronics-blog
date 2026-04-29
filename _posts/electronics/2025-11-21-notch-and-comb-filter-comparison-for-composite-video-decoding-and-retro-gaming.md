@@ -24,6 +24,7 @@ This article has the following sections:
 - [Tributaries C2S](#tributaries-c2s)
 - [Kramer 401D](#kramer-401d)
 - [Extron VYC 100N](#extron-vyc-100n)
+- [Radioshack 15-1238 S-Video Signal Converter](#radioshack-15-1238-s-video-signal-converter)
 - [Entech CSVC-1](#entech-csvc-1)
 - [manadream Notch Filter](#manadream-notch-filter)
 
@@ -248,6 +249,22 @@ It has a BNC connector for Composite video, and two BNC connectors for S-Video i
 
 The dot crawl on this one is better than the Tributaries and the Kramer, though the rainbow artifacts are about the same (which you can see on the left side of the white text in the SMW screens and in the Sonic image).
 
+### Radioshack 15-1238 S-Video Signal Converter
+
+![15-1238](/assets/img/Radioshack.jpg)
+
+I purchased this on eBay for $9, and they don't seem too difficult to find online.
+
+![240p Menu](/assets/img/Radioshack08.png)
+![Color Bars](/assets/img/Radioshack07.png)
+![240p Girl](/assets/img/Radioshack06.png)
+![SoR2](/assets/img/Radioshack05.png)
+![Sonic](/assets/img/Radioshack04.png)
+![Mario 64](/assets/img/Radioshack03.png)
+![SMW](/assets/img/Radioshack02.png)
+![Duck Tales](/assets/img/Radioshack01.png)
+
+This one was recommended to me by someone as a competitor to the Entech CSVC-1 (next in the lineup) and it does do a really good job! It has a bit more Chroma interference in Luma than the Entech, which you can see most clearly in the Duck Tales and Super Mario World screenshots which have more diagonal dot artifacts than the Entech, and in the rainbow banding in Sonic (and the jailbars are more noticeable on Genesis), but it's quite good and in some ways better than the Entech. Some examples of where it is better is the text in Duck Tales, Mario's hat (and pretty much everything else) in Mario 64, overall the colors are a bit more saturated, and it has slightly better color blending and dithering blending.
 
 ### Entech CSVC-1
 

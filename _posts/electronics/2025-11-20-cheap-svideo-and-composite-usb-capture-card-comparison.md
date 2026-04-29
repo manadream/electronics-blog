@@ -35,6 +35,8 @@ While I say this is the best quality capture card, I did find the colors to be a
 I also had to make these adjustments in OBS for it to look right.
 But for the purpose of capturing quality footage, this is the one I will be using.
 
+NOTE: To use this capture device in Linux I had to install [these drivers](https://github.com/harrypm/GV-USB2-Linux) using the `Automatically load the drivers` script in the repository. They work well but can get uninstalled by the OS so if it stops working randomly, you probably need to reinstall the drivers.
+
 ## Best Bang For Your Buck: HDSUNWSTD USB 2.0 AV/RCA Composite and S-Video Capture Card
 
 ![HDSUNWSTD](/assets/img/HDSUNWSTD.jpg)
