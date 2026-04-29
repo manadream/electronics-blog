@@ -35,7 +35,7 @@ That's all the wires you'll need to connect to your SCART port.
 
 ## Step 3: Prepare your SCART Port
 
-Use the following MUX diagram to create your RGB SCART MUX. DO NOT USE THE ONE FOR THE C-13110 ON SUNTHAR'S SITE! It does not have the correct values to get the best signal for this set. Specifically, you need to terminate the RGB lines with 220 ohms instead of 70 ohms to get the best signal. Sunthar has noted that this jungle chip works better with 220 Ohm termination resistors for other sets that use this same jungle chip [here](https://sector.sunthar.com/guides/crt-rgb-mod/samsung-cxf0933.html#increasing-rgb-termination-resistance).
+Use the following MUX diagram to create your RGB SCART MUX. DO NOT USE THE ONE FOR THE C-13110 ON SUNTHAR'S SITE! It does not have the correct values to get the best signal for this set. Specifically, you need to terminate the RGB lines with 220 ohms instead of 75 ohms to get the best signal. Sunthar has noted that this jungle chip works better with 220 Ohm termination resistors for other sets that use this same jungle chip [here](https://sector.sunthar.com/guides/crt-rgb-mod/samsung-cxf0933.html#increasing-rgb-termination-resistance).
 
 ![RGB MUX](/assets/img/RGB_MUX_Diagram_JVC_C-13111.png)
 
