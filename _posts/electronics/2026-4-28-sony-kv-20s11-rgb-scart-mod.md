@@ -89,5 +89,5 @@ And that's it for the mod! The picture will appear on the Video input when you p
 ![example](/assets/img/IMG_0051.JPG)
 ![example](/assets/img/IMG_0055.JPG)
 
-This article is also hosted on [Sunthar.com](https://my.sunthar.com/manadream/article/jvc-c-13111-rgb-scart-mod)
+This article is also hosted on [Sunthar.com](https://my.sunthar.com/manadream/article/sony-kv-20s11-rgb-scart-mod)
 
