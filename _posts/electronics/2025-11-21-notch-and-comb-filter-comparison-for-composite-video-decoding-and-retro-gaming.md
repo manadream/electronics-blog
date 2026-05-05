@@ -264,7 +264,7 @@ I purchased this on eBay for $9, and they don't seem too difficult to find onlin
 ![SMW](/assets/img/Radioshack02.png)
 ![Duck Tales](/assets/img/Radioshack01.png)
 
-This one was recommended to me by someone as a competitor to the Entech CSVC-1 (next in the lineup) and it does do a really good job! It has a bit more Chroma interference in Luma than the Entech, which you can see most clearly in the Duck Tales and Super Mario World screenshots which have more diagonal dot artifacts than the Entech, and in the rainbow banding in Sonic (and the jailbars are more noticeable on Genesis), but it's quite good and in some ways better than the Entech. Some examples of where it is better is the text in Duck Tales, Mario's hat (and pretty much everything else) in Mario 64, overall the colors are a bit more saturated, and it has slightly better color blending and dithering blending.
+This one was recommended to me by Joshua Cadmium as a competitor to the Entech CSVC-1 (next in the lineup) and it does do a really good job! It has a bit of Chroma interference in Luma which you can see most clearly in the rainbow banding in Sonic, but it's quite good and in most ways better than the Entech. Some examples of where it is better is the text in Duck Tales, Mario's hat (and pretty much everything else) in Mario 64, overall the colors are a bit more saturated, and it has slightly better color blending and dithering blending.
 
 ### Entech CSVC-1
 
@@ -281,8 +281,7 @@ Thanks to kitty666cats/Mike Lindquist, a fellow member of the CRT community, I g
 ![SMW](/assets/img/Entech%2002.png)
 ![Duck Tales](/assets/img/Entech%2001.png)
 
-This one has less dot crawl and rainbow artifacts than the Tributaries, Kramer and Extron. It still exhibits a fair bit of dot crawl on NES games however.
-
+This one has less dot crawl and rainbow artifacts than the Tributaries, Kramer and Extron, but more than the Radioshack filter. It exhibits a fair bit of dot crawl on NES games in particular.
 
 ### manadream Notch Filter
 
