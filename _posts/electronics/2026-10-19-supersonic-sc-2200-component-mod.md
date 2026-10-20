@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Supersonic SC-2200 Component Mod"
+title:  "Supersonic SC-2200 Component Video Mod"
 tags: CRT
 ---
 It is possible to Component mod this CRT by tying into the video and audio lines used by the DTV tuner addon board. This guide will cover how to do this.
