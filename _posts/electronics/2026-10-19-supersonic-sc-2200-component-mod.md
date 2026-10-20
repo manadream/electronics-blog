@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Supersonic SC-2200 S-Video Mod"
+title:  "Supersonic SC-2200 Component Mod"
 tags: CRT
 ---
 It is possible to Component mod this CRT by tying into the video and audio lines used by the DTV tuner addon board. This guide will cover how to do this.
+
+NOTE: Doing this mod WILL DISABLE RF/DTV INPUT, so you will no longer be able to view regular TV channels or use RF as an input.
 
 ![component](/assets/img/IMG_20261016_202338.jpg)
 
@@ -100,6 +102,8 @@ Additionally, the picture level of Component will be lower than the other inputs
 You will want to turn on "CRCB GAIN UP" by setting it to "1" and then increase "RB YUV", "GB YUV" and "BB YUV" by some amount (likely between 1 and 16) to get a similar picture level on Component as you do with other inputs. These adjustments are on "P3" of the service menu.
 
 That's it, you should now be able to enjoy Component Video on your set!
+
+NOTE: Because this mod disconnects the TV Tuner's output and uses that location to inject the signals, you will see the Component input on the "TV" input, but it will not have audio. You must use the "COMPONENT" input to have audio.
 
 You can view the [Service Manual with schematics](/assets/pdf/TQ2092%20Service%20Manual.pdf) for more info. The model doesn't match up but this is in fact the same TV PCB and schematic.
 
