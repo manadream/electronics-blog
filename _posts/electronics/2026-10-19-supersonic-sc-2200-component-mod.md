@@ -109,4 +109,4 @@ You can view the [Service Manual with schematics](/assets/pdf/TQ2092%20Service%2
 
 This [service manual](/assets/pdf/haier_tcr13.pdf) has details on the service menu options and how to use it, but the schematics in it are unreadable.
 
-This article is also hosted on [Sunthar.com](https://electron.sunthar.com/manadream/product/supersonic-sc-2200-s-video-mod)
+This article is also hosted on [Sunthar.com](https://my.sunthar.com/manadream/article/supersonic-sc-2200-component-video-mod)
