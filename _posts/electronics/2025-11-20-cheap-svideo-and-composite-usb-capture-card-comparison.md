@@ -12,6 +12,17 @@ I tried a total of 5 different USB capture devices, with a price range of $9 to 
 All test pictures are from the 240p Test Suite running on a stock, recapped Genesis Model 1. Since it is not modded, there are some "jailbars", a kind of video interference, in the source video.
 I decided to not use a modded console to as to see how well the various capture cards handle imperfect video. I think it is a more faithful comparison.
 
+Recommended:
+[Highest Quality: I-O DATA GV-USB2](#highest-quality-i-o-data-gv-usb2)
+[Best Bang For Your Buck: HDSUNWSTD USB 2.0 Capture Card](#best-bang-for-your-buck-hdsunwstd-usb-20-avrca-composite-and-s-video-capture-card)
+
+Others I tested (from best to worst):
+[PCIE Expansion Card AV Surveillance HD 640X480 Capture Card](#pcie-expansion-card-pcie-to-av-surveillance-hd-640x480-resolution-video-capture-card-image-capture-card)
+[Tihokile USB VHS to Digital Converter](#tihokile-usb-vhs-to-digital-converter-for-rca-to-usb-convert)
+[Nsendato USB 2.0 Type C AV S Video Capture Card Adapter](#nsendato-usb-20-type-c-av-s-video-capture-card-adapter)
+[TCNEWCL USB Audio Video Converter](#tcnewcl-usb-audio-video-converter)
+
+
 ## Highest Quality: I-O DATA GV-USB2
 
 ![GV-USB2](/assets/img/I-O_DATA_GV-USB2_1-scaled-1290573213.jpg)
@@ -58,13 +69,32 @@ nicer than the GV-USB2, but it does come at the cost of more "jailbars" than the
 
 I'll show the other ones I tested, in order of highest to lowest quality, so you can see how much variance there is with these cheap capture devices. I do not recommend these unless you for some reason like the way they look.
 
-### 1. Tihokile USB VHS to Digital Converter for RCA to USB-Convert
+### PCIE Expansion Card PCIE To AV Surveillance HD 640X480 Resolution Video Capture Card Image Capture Card
+
+![PCI Express Capture Card](/assets/img/pcicapcard.jpg)
+
+Price: ~$35
+
+I got this [on AliExpress](https://www.aliexpress.us/item/3256807629143555.html) and it's quite good, but it does have some quirks that make it not great for all use cases. Specifically, it really does not like sync signals from 16-bit consoles or older (I tested Genesis and SNES). Unless the console does a good job with providing clean sync to the card, the image will have severe horizontal instability and jitter. Here's a pic of what it does with a Genesis signal:
+
+![Unstable Sync Lock](/assets/img/Screenshot%202026-11-09%2016-50-25.png)
+
+It did work well with my N64 though. Here's how that looks:
+
+![Color Bars](/assets/img/Screenshot%202026-11-09%2016-42-29.png)
+![240p Girl](/assets/img/Screenshot%202026-11-09%2016-43-28.png)
+![240p Sonic](/assets/img/Screenshot%202026-11-09%2016-43-43.png)
+![240p Girl](/assets/img/Screenshot%202026-11-08%2012-46-02.png)
+
+A workaround for consoles that have sync issues with this card would be to use a VCR in the middle (or something else that may take the signal in and condition it), or get a Video Time Base Corrector, but those are expensive.
+
+### Tihokile USB VHS to Digital Converter for RCA to USB-Convert
 
 ![Tihokile](/assets/img/TIHOKILE.jpg)
 
 Price: ~$13
 
-I got this [from Amazon](https://www.amazon.com/dp/B0DBQ1G6C1), and it's not too bad. I'd say it's the best of the worst (of the ones I tested). It definitely has noticeable jailbars.
+I got this [from Amazon](https://www.amazon.com/dp/B0DBQ1G6C1), and it's not too bad. I'd say it's the best of the worst USB option (of the ones I tested). It definitely has noticeable jailbars.
 
 ![Color Bars](/assets/img/tihokile%201.png)
 ![240p Girl](/assets/img/tihokile%202.png)
@@ -72,7 +102,7 @@ I got this [from Amazon](https://www.amazon.com/dp/B0DBQ1G6C1), and it's not too
 
 I did have some issues with it needing to be plugged into the back USB ports of my computer, it kept resetting when plugged into the front ports, but that's probably just my computer.
 
-### 2. Nsendato USB 2.0 Type C AV S Video Capture Card Adapter
+### Nsendato USB 2.0 Type C AV S Video Capture Card Adapter
 
 ![Nsendato](/assets/img/USB%202.0%20Type%20C%20AV%20S%20Video%20Capture%20Card.png)
 
@@ -84,7 +114,7 @@ This one comes [from AliExpress](). It's pretty close to the Tihokile, with just
 ![240p Girl](/assets/img/USB%202.0%20Type%20C%20AV%20S%20Video%20Capture%20Card%20Adapter%20RCA%20AV%20Video%20Composite%20to%20USB%20Type%20C%20Converter%20Support%20NTSC%20PAL%20For%20Camera%20OBS%20PC%202.png)
 ![240p Sonic](/assets/img/USB%202.0%20Type%20C%20AV%20S%20Video%20Capture%20Card%20Adapter%20RCA%20AV%20Video%20Composite%20to%20USB%20Type%20C%20Converter%20Support%20NTSC%20PAL%20For%20Camera%20OBS%20PC%203.png)
 
-### 3. TCNEWCL USB Audio Video Converter
+### TCNEWCL USB Audio Video Converter
 
 ![TCNEWCL](/assets/img/USB%20Audio%20Video%20Converter.jpg)
 
