@@ -13,13 +13,19 @@ All test pictures are from the 240p Test Suite running on a stock, recapped Gene
 I decided to not use a modded console to as to see how well the various capture cards handle imperfect video. I think it is a more faithful comparison.
 
 Recommended:
+
 [Highest Quality: I-O DATA GV-USB2](#highest-quality-i-o-data-gv-usb2)
+
 [Best Bang For Your Buck: HDSUNWSTD USB 2.0 Capture Card](#best-bang-for-your-buck-hdsunwstd-usb-20-avrca-composite-and-s-video-capture-card)
 
 Others I tested (from best to worst):
+
 [PCIE Expansion Card AV Surveillance HD 640X480 Capture Card](#pcie-expansion-card-pcie-to-av-surveillance-hd-640x480-resolution-video-capture-card-image-capture-card)
+
 [Tihokile USB VHS to Digital Converter](#tihokile-usb-vhs-to-digital-converter-for-rca-to-usb-convert)
+
 [Nsendato USB 2.0 Type C AV S Video Capture Card Adapter](#nsendato-usb-20-type-c-av-s-video-capture-card-adapter)
+
 [TCNEWCL USB Audio Video Converter](#tcnewcl-usb-audio-video-converter)
 
 
